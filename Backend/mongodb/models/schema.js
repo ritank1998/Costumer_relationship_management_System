@@ -1,9 +1,9 @@
 import mongoose from "mongoose"
 
 
-const db1 = mongoose.createConnection("mongodb://127.0.0.1:27017/Visitors")
-const db2 = mongoose.createConnection("mongodb://127.0.0.1:27017/Clients")
-
+const db1 = mongoose.createConnection("mongodb://127.0.0.1:27017/Costumer_Relationship_System")
+const db2 = mongoose.createConnection("mongodb://127.0.0.1:27017/Costumer_Relationship_System")
+const db3 = mongoose.createConnection("mongodb://127.0.0.1:27017/Costumer_Relationship_System")
 
 export const walkInVisitors = db1.model("walkInVisitors", mongoose.Schema({
     Name: {
@@ -88,5 +88,33 @@ export const userDetails = db2.model("newClients", mongoose.Schema({
     reception: {
         type: String,
         require: true
+    }
+}))
+
+
+export const newBusiness = db3.model("newBusiness" , mongoose.Schema({
+    fullName: {
+        type: String,
+        required: true
+    },
+    email: {
+        type :String,
+        required: true
+    },
+    number: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    confirm_password: {
+        type: String,
+        required: true
+    },
+    Business_Type:{
+        type: String,
+        required: true
     }
 }))

@@ -1,9 +1,11 @@
 import express from "express"
-import { users , clients } from "../routes/userCreation.js"
+import { users , clients , signup, getClients ,businessDetails } from "../routes/userCreation.js"
 const router = express.Router()
 
 router.post("/createuser" , users)
 router.post("/newclients" , clients)
-
+router.post("/signup" , signup )
+router.get("/clients" , getClients)
+router.get("/business" , businessDetails)
 
 export default router
