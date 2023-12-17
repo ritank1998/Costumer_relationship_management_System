@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Costumer_relationship_management_System/static/css/main.0b71aeeb.css",
+    "main.js": "/Costumer_relationship_management_System/static/js/main.25a371f1.js",
+    "static/js/787.53941db6.chunk.js": "/Costumer_relationship_management_System/static/js/787.53941db6.chunk.js",
+    "static/media/revicons.eot": "/Costumer_relationship_management_System/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Costumer_relationship_management_System/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Costumer_relationship_management_System/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/Costumer_relationship_management_System/index.html",
+    "main.0b71aeeb.css.map": "/Costumer_relationship_management_System/static/css/main.0b71aeeb.css.map",
+    "main.25a371f1.js.map": "/Costumer_relationship_management_System/static/js/main.25a371f1.js.map",
+    "787.53941db6.chunk.js.map": "/Costumer_relationship_management_System/static/js/787.53941db6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b71aeeb.css",
+    "static/js/main.25a371f1.js"
+  ]
+}
