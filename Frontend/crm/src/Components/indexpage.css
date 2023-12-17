@@ -18,3 +18,18 @@
 .login{
     margin-top: 210px;
 }
+.custom-form {
+    margin-top: 50px;
+    margin-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .center-heading {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: black;
+    height: 10px;
+    line-height: 1.5; /* Adjust line height as needed */
+  }
