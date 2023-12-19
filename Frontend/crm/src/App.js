@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import Footer from './Components/Footer';
 import IndexPage from './Components/indexpage';
 
 import {Route,Routes} from 'react-router-dom'
@@ -8,6 +7,7 @@ import Login from './Components/Login';
 import Loggedin from './Components/loggedin';
 import LandingPage from './Components/landingAfterSignup';
 import Clients from './Components/Clients';
+import Dashboard from './Components/dashboard';
 
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
       <Route path='/login' element={<Loggedin />}/>
       <Route path='/landing' element={<LandingPage />} />
       <Route path='/client' element={<Clients />}/>
+      <Route path='/dashboard' element={<Dashboard />}></Route>
     </Routes>
-    <Footer />
     </>
   );
 }

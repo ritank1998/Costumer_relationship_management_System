@@ -1,38 +1,45 @@
 import React from "react";
-import { getClients } from "../Controller/controller";
-import { NavLink } from "react-router-dom";
-const Clients =()=>{
-    fetch('http://localhost:2102/crm/clients').then((res)=>res.json()).then((data)=>console.log(data))
-
-    return(
+import "./indexpage.css"
+import Newbar from "./newbar";
+import Footer from "./Footer";
+const Clients = () => {
+    return (
         <>
-         <div className="container">
-                <nav className="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-                    <div className="container">
-                        <a className="navbar-brand" href="index.html">Client Metrix</a>
-                        <div className="social-media order-lg-last">
-                            <p className="mb-0 d-flex">
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a>
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a>
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a>
-                            </p>
-                        </div>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="fa fa-bars"></span> Menu
-                        </button>
-                        <div className="collapse navbar-collapse" id="ftco-nav">
-                            <ul className="navbar-nav ml-auto mr-md-3">
-                                <li className="nav-item active"><NavLink to='/landing' className="nav-link">Home</NavLink></li>
-                                <li className="nav-item"><NavLink href="#" className="nav-link">Account Settings</NavLink></li>
-                                <li className="nav-item"><NavLink href="#" className="nav-link">Contact Us</NavLink></li>
-                                <li className="nav-item"><NavLink href="#" className="nav-link">Logout</NavLink></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+        <Newbar />
+        <nav class="navbar navbar-light bg-light searchBox">
+  <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2 box" type="search" placeholder="Seacrh Your Client Here ......" aria-label="Search" />
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="table-responsive">
+  <table class="table table-striped border border-secondary rounded shadow-sm">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Client Name</th>
+        <th scope="col">Client Email</th>
+        <th scope="col">Client Contact Number</th>
+        <th scope="col">Plan Expiry Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>John Doe</td>
+        <td>john.doe@example.com</td>
+        <td>+91 123-456-7890</td>
+        <td>2024-01-01</td>
+      </tr>
+      </tbody>
+  </table>
+</div>  
+
+<Footer />
         </>
+        
     )
 }
 export default Clients

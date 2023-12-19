@@ -1,37 +1,15 @@
 import React from "react";
 import "./indexpage.css"
-import { NavLink } from "react-router-dom";
+import Newbar from "./newbar";
+import Footer from "./Footer";
 const LandingPage = () => {
     return (
         <>
+         <Newbar />
 
-            <div className="container">
-                <nav className="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-                    <div className="container">
-                        <a className="navbar-brand" href="index.html">Client Metrix</a>
-                        <div className="social-media order-lg-last">
-                            <p className="mb-0 d-flex">
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a>
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a>
-                                <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a>
-                            </p>
-                        </div>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="fa fa-bars"></span> Menu
-                        </button>
-                        <div className="collapse navbar-collapse" id="ftco-nav">
-                            <ul className="navbar-nav ml-auto mr-md-3">
-                                <li className="nav-item active"><NavLink to='/landing' className="nav-link">Home</NavLink></li>
-                                <li className="nav-item"><NavLink to='/client' className="nav-link">Clients</NavLink></li>
-                                <li className="nav-item"><NavLink href="#" className="nav-link">Account Settings</NavLink></li>
-                                <li className="nav-item"><NavLink href="#" className="nav-link">Contact Us</NavLink></li>
-                                <li className="nav-item"><NavLink href="#" className="nav-link">Logout</NavLink></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -45,8 +23,8 @@ const LandingPage = () => {
                     <input type="email" class="form-control" id="inputEmail4" />
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Email</label>
-                    <input type="password" class="form-control" id="inputPassword4" />
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="Email" class="form-control" id="inputEmail" />
                 </div>
                 <div class="col-md-6">
                     <label for="inputNumber" class="form-label">Number</label>
@@ -116,12 +94,12 @@ const LandingPage = () => {
                     <input type="text" class="form-control" id="inputZip" />
                 </div>
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Emergency Contact Name</label>
-                    <input type="email" class="form-control" id="inputEmail4" />
+                    <label for="inputName" class="form-label">Emergency Contact Name</label>
+                    <input type="Name" class="form-control" id="inputName" />
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Emergency Contact Email</label>
-                    <input type="password" class="form-control" id="inputPassword4" />
+                    <label for="inputEmail" class="form-label">Emergency Contact Email</label>
+                    <input type="Email" class="form-control" id="inputEmail" />
                 </div>
                 <div class="col-md-6">
                     <label for="inputNumber" class="form-label">Emergency Contact Number</label>
@@ -202,6 +180,7 @@ const LandingPage = () => {
                     <button type="submit" class="btn btn-primary">Create Client</button>
                 </div>
             </form>
+            <Footer />
         </>
     )
 }

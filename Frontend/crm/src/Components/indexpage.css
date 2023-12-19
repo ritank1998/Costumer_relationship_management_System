@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 .carsel{
     padding: 5px;
     height: 250px;
@@ -13,7 +14,7 @@
     margin-top: 10px;
 }
 .footer{
-    margin-top: 10px;
+    margin-top: 105px;
 }
 .login{
     margin-top: 210px;
@@ -32,4 +33,135 @@
     text-decoration-color: black;
     height: 10px;
     line-height: 1.5; /* Adjust line height as needed */
+  }
+ /*navbar*/
+ .bg-pink-lightest {
+    background-color: #fffaeb;
+  }
+  .searchBox{
+    margin-top: 20px;
+    width: 500px;
+    margin-left: 500px;
+  }
+  .box{
+    width: 500px;
+  }
+ /* Media query for smaller screens Search-Box*/
+@media screen and (max-width: 768px) {
+    .searchBox {
+      width: 80%; /* Adjust width for smaller screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 80%; /* Adjust width for smaller screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+  
+  /* Media query for 1200px screens Search-Box*/
+  @media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .searchBox {
+      width: 700px; /* Adjust width for 1200px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 700px; /* Adjust width for 1200px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+  
+  /* Media query for 1400px screens Search-Box*/
+  @media screen and (min-width: 1400px) and (max-width: 1599px) {
+    .searchBox {
+      width: 800px; /* Adjust width for 1400px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 800px; /* Adjust width for 1400px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+  
+  /* Media query for 1600px screens Search-Box*/
+  @media screen and (min-width: 1600px) {
+    .searchBox {
+      width: 900px; /* Adjust width for 1600px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 900px; /* Adjust width for 1600px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+  /* Media query for 1800px screens */
+@media screen and (min-width: 1800px) {
+    .searchBox {
+      width: 900px; /* Adjust width for 1800px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 900px; /* Adjust width for 1800px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+  @media screen and (min-width: 1100px) and (max-width: 1799px) {
+    .searchBox {
+      width: 700px; /* Adjust width for 1100px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 700px; /* Adjust width for 1100px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+  
+  /* Media query for 900px screens */
+@media screen and (min-width: 900px) and (max-width: 1099px) {
+    .searchBox {
+      width: 600px; /* Adjust width for 900px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 600px; /* Adjust width for 900px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+
+  /* Media query for 800px screens */
+@media screen and (max-width: 800px) {
+    .searchBox {
+      width: 80%; /* Adjust width for 800px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  
+    .box {
+      width: 80%; /* Adjust width for 800px screens */
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+    }
+  }
+  .table-responsive {
+    margin: 40px 40px;
   }

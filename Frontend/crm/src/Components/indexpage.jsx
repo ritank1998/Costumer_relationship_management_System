@@ -4,14 +4,23 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { NavLink, Route, Routes } from "react-router-dom";
 import Login from "./Login"
+import myImage from "../images/image1.jpg"
+import myImage1 from "../images/image2.jpg"
+import myImage2 from "../images/image3.jpg"
+import myImage3 from "../images/image4.png"
+import myImage4 from "../images/image5.jpg"
+import myImage5 from "../images/image6.jpg"
+import logo from "../images/logo.png"
+import Footer from "./Footer";
+
 
 const images = [
-    'images/image1.jpg',
-    'images/image2.jpg',
-    'images/image3.jpg',
-    'images/image4.png',
-    'images/image5.jpg',
-    'images/image6.jpg'
+    myImage,
+    myImage2,
+    myImage3,
+    myImage3,
+    myImage4,
+    myImage5
     // Add more image URLs here as needed
 ];
 
@@ -49,7 +58,7 @@ const IndexPage = () => {
             <nav className="navbar navbar-light bg-dark index">
                 <div className="container d-flex justify-content-between align-items-center">
                     <NavLink className="navbar-brand" to="/" >
-                        <img src="images/logo.png" alt="" width="60" height="50" />
+                        <img src={logo} alt="" width="60" height="50" />
                     </NavLink>
                     <NavLink className="btn btn-primary" to="/signin">Signup Here</NavLink>
                 </div>
@@ -131,6 +140,7 @@ const IndexPage = () => {
                 <Route path="/signin" element={<Login />}></Route>
 
             </Routes>
+            <Footer />
         </>
     );
 };

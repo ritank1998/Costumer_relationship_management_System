@@ -1,6 +1,7 @@
 import React , {useState} from 'react';
 import "./indexpage.css"
 import { NavLink } from 'react-router-dom';
+import logo from "../images/logo.png"
 
 const Login = () => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
@@ -36,7 +37,7 @@ const Login = () => {
 <nav className="navbar navbar-light bg-dark index">
                 <div className="container d-flex justify-content-between align-items-center">
                     <NavLink className="navbar-brand" to="/">
-                        <img src="images/logo.png" alt="" width="60" height="50" />
+                        <img src={logo} alt="" width="60" height="50" />
                     </NavLink>
                     <NavLink className="btn btn-primary" to="/home">Home</NavLink>
                 </div>
