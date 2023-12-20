@@ -1,8 +1,12 @@
 import React from "react";
 import "./indexpage.css"
 import Newbar from "./newbar";
+import ClientProp from "./clientsProps";
 import Footer from "./Footer";
 const Clients = () => {
+    fetch('http://localhost:2102/crm/clients').then((res)=>res.json()).then((data)=>console.log(data))
+
+
     return (
         <>
         <Newbar />
@@ -14,7 +18,10 @@ const Clients = () => {
     </form>
   </div>
 </nav>
-<div class="table-responsive">
+
+<ClientProp />
+
+{/* <div class="table-responsive">
   <table class="table table-striped border border-secondary rounded shadow-sm">
     <thead>
       <tr>
@@ -35,7 +42,7 @@ const Clients = () => {
       </tr>
       </tbody>
   </table>
-</div>  
+</div>   */}
 
 <Footer />
         </>
