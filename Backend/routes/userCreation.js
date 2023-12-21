@@ -118,7 +118,7 @@ export const clients = async (req, res) => {
 export const getClients = async (req,res) => {
     try {
         const data = await userDetails.find({})
-        res.status(200).json(CircularJSON.stringify({ data }))
+        res.status(200).send(data)
     }
     catch (error) {
         res.status(500).json(CircularJSON.stringify({ error: error.message }))

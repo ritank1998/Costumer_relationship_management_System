@@ -38,11 +38,10 @@
  .bg-pink-lightest {
     background-color: #fffaeb;
   }
-  .searchBox{
-    margin-top: 20px;
-    width: 500px;
-    margin-left: 500px;
+  .navbar{
+    width: 100%;
   }
+  
   .box{
     width: 500px;
   }
@@ -147,21 +146,142 @@
       margin-right: auto; /* Center horizontally */
     }
   }
+/* Default table width */
+/* Default styles for .searchBox */
+@media screen and  (min-width: 350px) and (max-width: 400px){
+  .searchBox {
+    width: 300px; /* Adjust width for 900px screens */
+    margin-left: 20px; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+  }
 
-  /* Media query for 800px screens */
-@media screen and (max-width: 800px) {
-    .searchBox {
-      width: 80%; /* Adjust width for 800px screens */
-      margin-left: auto; /* Center horizontally */
-      margin-right: auto; /* Center horizontally */
-    }
+  .box {
+    width: 200px; /* Adjust width for 900px screens */
+    margin-left: 50px; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+  }
   
-    .box {
-      width: 80%; /* Adjust width for 800px screens */
-      margin-left: auto; /* Center horizontally */
-      margin-right: auto; /* Center horizontally */
-    }
+}
+@media screen and  (min-width: 550px) and (max-width: 750px){
+  .searchBox {
+    width: 410px; /* Adjust width for 900px screens */
+    margin-left: 20px; /* Center horizontally */
+    margin-right: auto;
+    margin-top: 20px; /* Center horizontally */
   }
-  .table-responsive {
-    margin: 40px 40px;
+
+  .box {
+    width: 400px; /* Adjust width for 900px screens */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
   }
+}
+.searchBox {
+  margin-top: 20px; /* Center horizontally */
+}
+.myTable{
+  margin-top: 20px;
+  max-width: 1000px;
+  margin-left: 315px;
+}
+
+@media screen and  (min-width: 400px) and (max-width: 500px){
+  .myTable{
+    margin-top: 20px;
+    max-width: 50px;
+    margin-left: 20px;
+  }
+    
+}
+@media screen and  (min-width: 550px) and (max-width: 600px){
+  .myTable{
+    margin-top: 20px;
+    max-width: 10px;
+    margin-left: 20px;
+  }
+    
+}
+@media screen and  (min-width: 1200px) and (max-width: 1270px){
+  .myTable{
+    margin-top: 20px;
+    width: 900px;
+    margin-left: 220px;
+  }
+    
+}
+.btns{
+  margin-top: 100px;
+}
+.btn2{
+  margin-top: 50px;
+  height: 80px;
+  margin-left: 180px;
+  width: 450px;
+}
+.btn1{
+  height: 80px;
+  margin-left: 180px;
+  width: 450px;
+}
+
+.cards{
+  margin-top: 50px;
+}
+.sigmacard{
+  max-width: 750px;
+}
+.sigmacard1{
+  margin-left: 20px;
+}
+.sigmacard3{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.sigmacard4{
+  margin-top: 10px;
+}
+@media screen and  (min-width: 1200px) and (max-width: 1300px){
+ 
+  .btns{
+    margin-top: 20px;
+  }
+  .btn2{
+    margin-top: 20px;
+    height: 80px;
+    margin-left: 60px;
+  }  
+  .btn1{
+    margin-top: 20px;
+    height: 80px;
+    margin-left: 60px;
+  }  
+  .sigmacard{
+    max-width: 500px;
+  } 
+  .sigmacard1{
+    margin-left: 80px;
+  }
+  .sigmacard2{
+    margin-left: 80px;
+  }
+  .sigmacard3{
+    margin-left: 80px;
+  }
+  .sigmacard4{
+    margin-left: 80px;
+  }
+}
+@media screen and  (min-width: 1700px) and (max-width: 1800px){
+  .btn2{
+    margin-top: 20px;
+    height: 80px;
+    margin-left: 60px;
+  }  
+  .btn1{
+    margin-top: 20px;
+    height: 80px;
+    margin-left: 60px;
+  }
+  
+
+}

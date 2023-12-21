@@ -8,6 +8,8 @@ import Loggedin from './Components/loggedin';
 import LandingPage from './Components/landingAfterSignup';
 import Clients from './Components/Clients';
 import Dashboard from './Components/dashboard';
+import Home from './Components/Home';
+import Visitor from './Components/Visitor';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path='/landing' element={<LandingPage />} />
       <Route path='/client' element={<Clients />}/>
       <Route path='/dashboard' element={<Dashboard />}></Route>
+      <Route path='/selectclienttype' element={<Home />}></Route>
+      <Route path='/visitortype' element={<Visitor />}></Route>
     </Routes>
     </>
   );

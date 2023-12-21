@@ -21,28 +21,6 @@ const Clients = () => {
 
 <ClientProp />
 
-{/* <div class="table-responsive">
-  <table class="table table-striped border border-secondary rounded shadow-sm">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Client Name</th>
-        <th scope="col">Client Email</th>
-        <th scope="col">Client Contact Number</th>
-        <th scope="col">Plan Expiry Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>John Doe</td>
-        <td>john.doe@example.com</td>
-        <td>+91 123-456-7890</td>
-        <td>2024-01-01</td>
-      </tr>
-      </tbody>
-  </table>
-</div>   */}
 
 <Footer />
         </>

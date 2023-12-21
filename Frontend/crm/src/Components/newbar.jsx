@@ -16,10 +16,10 @@ const Newbar = () => {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <NavLink to='/landing'><a class="nav-link text-dark fw-bold">Home</a> </NavLink>
+                                <NavLink to='/selectclienttype'><a class="nav-link text-dark fw-bold">Home</a> </NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink to='/client'><a class="nav-link text-dark">Clients</a></NavLink>
+                                <NavLink to='/client'><a class="nav-link text-dark">Client-Book</a></NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink to='/dashboard'><a class="nav-link text-dark">Dashboard</a></NavLink>
