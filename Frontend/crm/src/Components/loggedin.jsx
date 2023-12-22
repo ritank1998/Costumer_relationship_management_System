@@ -4,34 +4,38 @@ import { NavLink } from 'react-router-dom';
 import logo from "../images/logo.png"
 
 const Login = () => {
-  const [emailOrPhone, setEmailOrPhone] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = async(e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('http://localhost:2102/crm/business', {
-          method: 'GET',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ emailOrPhone, password }),
-      });
-      if (response.ok) {
-          // Login successful
-          const data = await response.json();
-          console.log('Login successful:', data);
-          // Perform actions upon successful login
-      }
-      else {
-        // Handle login failure
-        console.error('Login failed');
-    }
-} catch (error) {
-    console.error('Error:', error);
-}
-  };
+  const loadEmail =(e)=>{
+     setEmail(e.target.value)
+     
+  }
+  const loadPassword =(e)=>{
+    setPassword(e.target.value)
+  }
+  console.log(email)
+  console.log(password)
+  const payload = {
+    email ,
+    password
+  }
+  const handleSubmit= async(e)=>{
+   e.preventDefault()
+   try{
 
+    const response = await fetch('http://localhost:2102/crm/business', {
+      method: 'POST',
+      headers :{
+        'Coontent-Type' : 'application/json',
+      },
+      body: JSON.stringify(payload)
+    })
+   }catch(error){
+    console.log("error:" , error.message)
+   }
+  }
+  
   return (
 <>
 <nav className="navbar navbar-light bg-dark index">
@@ -50,17 +54,17 @@ const Login = () => {
           <br></br>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="formIdentifier">Email or Mobile Number</label>
+              <label htmlFor="formIdentifier">Email Address</label>
               <br></br>
-              <input type="text" className="form-control" id="formIdentifier" placeholder="Enter email or mobile number" required />
+              <input type="text" className="form-control" id="formIdentifier" placeholder="Enter email or mobile number" required onChange={loadEmail} />
             </div>
 
             <div className="form-group">
-              <label htmlFor="formPassword">Password</label>
-              <input type="password" className="form-control" id="formPassword" placeholder="Enter password" required />
+              <label htmlFor="formPassword">Enter Your Password</label>
+              <input type="password" className="form-control" id="formPassword" placeholder="Enter password" required onChange={loadPassword}/>
             </div>
             <br></br>
-            <button type="submit" className="btn btn-primary btn-block">Login</button>
+            <button type="submit" className="btn btn-primary btn-block" >Login</button>
           </form>
 
           <p className="text-center mt-3">New user? <NavLink to='/signin'>Sign up</NavLink></p>

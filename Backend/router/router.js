@@ -6,6 +6,6 @@ router.post("/createuser" , users)
 router.post("/newclients" , clients)
 router.post("/signup" , signup )
 router.get("/clients" , getClients)
-router.get("/business" , businessDetails)
+router.post("/business" , businessDetails)
 
 export default router

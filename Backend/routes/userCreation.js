@@ -29,18 +29,8 @@ export const signup = async (req, res) => {
 
 //sending the business login details
 export const businessDetails = async(req,res)=>{
+    const {email , password}= req.body
     try{
-        const {email , pass}= req.body
-        console.log(email)
-       const user = await newBusiness.find({email : email})
-       console.log(user)
-       const password  = user.number
-       console.log(password)
-       if(pass == password){
-        res.status(200).json(CircularJSON.stringify({data}))
-       }else{
-        res.status(404).json(CircularJSON.stringify("User Not Found !!!"))
-       }
        
     }
     catch(error){
