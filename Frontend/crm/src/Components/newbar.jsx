@@ -19,7 +19,7 @@ const Newbar = () => {
                                 <NavLink to='/selectclienttype'><a class="nav-link text-dark fw-bold">Home</a> </NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink to='/client'><a class="nav-link text-dark">Client-Book</a></NavLink>
+                                <NavLink to='/clientbook'><a class="nav-link text-dark">Client-Book</a></NavLink>
                             </li>
                             <li class="nav-item">
                                 <NavLink to='/dashboard'><a class="nav-link text-dark">Dashboard</a></NavLink>
@@ -29,7 +29,9 @@ const Newbar = () => {
                                     Account Settings
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <li><NavLink to='/points'><a class="dropdown-item text-dark" href="#">Point List</a></NavLink></li>
                                     <li><NavLink><a class="dropdown-item text-dark" href="#">Logout</a></NavLink></li>
+
                                 </ul>
                             </li>
                         </ul>

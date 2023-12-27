@@ -10,7 +10,7 @@ export const walkInVisitors = db1.model("walkInVisitors", mongoose.Schema({
         type: String,
         required: true
     },
-    Number: {
+    number: {
         type: Number,
         requires: true
     },
@@ -23,11 +23,15 @@ export const walkInVisitors = db1.model("walkInVisitors", mongoose.Schema({
         required: true
     },
     Date: {
-        type: Date,
+        type: String,
+        required: true
+    },
+    gender: {
+        type: String,
         required: true
     },
     Next_Date_Of_Contact: {
-        type: Date,
+        type: String,
     },
     Enquiry_Type: {
         type: String,
@@ -44,11 +48,19 @@ export const userDetails = db2.model("newClients", mongoose.Schema({
         type: String,
         required: true
     },
+    gender: {
+        type: String,
+        required: true
+    },
+    age:{
+        type: Number,
+        require: true
+    },
     customer_Id: {
         type: String,
         require: true
     },
-    Number: {
+    number: {
         type: Number,
         require: true
     },
@@ -66,16 +78,18 @@ export const userDetails = db2.model("newClients", mongoose.Schema({
      },
     payment_Intent: {
        type: String,
-       require: true
       },
     InvoiceId: {
         type: String,
-        require: true
     },
     Service:{
         type: String,
         require: true
     },
+    Emergency_Name:{
+        type: String,
+        require:true
+   },
     Emergency_Contact:{
          type: Number
     },
@@ -85,8 +99,16 @@ export const userDetails = db2.model("newClients", mongoose.Schema({
     Emergency_Address: {
         type: String
     },
+    Emergency_Relation:{
+       type: String,
+       require: true
+    },
     reception: {
         type: String,
+        require: true
+    },
+    enrolled:{
+        type : String,
         require: true
     }
 }))

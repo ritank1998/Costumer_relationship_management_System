@@ -179,11 +179,11 @@
 .searchBox {
   margin-top: 20px; /* Center horizontally */
 }
-.myTable{
+/* .myTable{
   margin-top: 20px;
   max-width: 1000px;
   margin-left: 315px;
-}
+} */
 
 @media screen and  (min-width: 400px) and (max-width: 500px){
   .myTable{
@@ -194,19 +194,19 @@
     
 }
 @media screen and  (min-width: 550px) and (max-width: 600px){
-  .myTable{
+  /* .myTable{
     margin-top: 20px;
     max-width: 10px;
     margin-left: 20px;
   }
-    
+     */
 }
 @media screen and  (min-width: 1200px) and (max-width: 1270px){
-  .myTable{
+  /* .myTable{
     margin-top: 20px;
     width: 900px;
     margin-left: 220px;
-  }
+  } */
     
 }
 .btns{

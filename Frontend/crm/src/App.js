@@ -10,6 +10,11 @@ import Clients from './Components/Clients';
 import Dashboard from './Components/dashboard';
 import Home from './Components/Home';
 import Visitor from './Components/Visitor';
+import LoginFail from './Components/LoginFailure';
+import SignUpFailed from './Components/Signupfailed';
+import VisitorBook from './Components/visitorsBook';
+import UserBook from './Components/UserBook';
+import PointsTable from './Components/pointstable';
 
 function App() {
   return (
@@ -19,11 +24,16 @@ function App() {
       <Route path='/signin' element={<Login />}/>
       <Route path='/home' element={<IndexPage />}/>
       <Route path='/login' element={<Loggedin />}/>
-      <Route path='/landing' element={<LandingPage />} />
+      <Route path='/clientform' element={<LandingPage />} />
       <Route path='/client' element={<Clients />}/>
       <Route path='/dashboard' element={<Dashboard />}></Route>
       <Route path='/selectclienttype' element={<Home />}></Route>
       <Route path='/visitortype' element={<Visitor />}></Route>
+      <Route path='/loginfail' element={<LoginFail />}></Route>
+      <Route path='/signupfail' element={<SignUpFailed />}></Route>
+      <Route path='/visitor' element={<VisitorBook />}></Route>
+      <Route path='/clientbook' element={<UserBook />}></Route>
+      <Route path='/points' element={<PointsTable />}></Route> 
     </Routes>
     </>
   );

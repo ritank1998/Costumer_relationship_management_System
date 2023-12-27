@@ -28,7 +28,7 @@ const ClientProp = () => {
   return (
     <div>
       {Array.isArray(clients) && clients.length > 0 ? (
-        <table className="table table-bordered table-responsive myTable">
+        <table className="table table-bordered table-responsive myTable col-md-8 .mx-auto">
           <thead>
             <tr>
               <th scope="col">Serial Number</th>
