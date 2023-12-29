@@ -110,6 +110,9 @@ export const userDetails = db2.model("newClients", mongoose.Schema({
     enrolled:{
         type : String,
         require: true
+    },
+    Payment_Status: {
+        type: String
     }
 }))
 

@@ -106,7 +106,7 @@ export const users = async (req, res) => {
 export const clients = async (req, res) => {
     const novu = new Novu(NOVU_KEY)
     try {
-        const {age ,Emergency_Relation,Emergency_Name, gender ,enroll ,customer_Id, Name, number, email, Date_Of_Billing, End_Date, Address, payment_Intent, InvoiceId, Emergency_Contact, Emergency_Email, Emergency_Address, reception, Service } = req.body
+        const {Payment_Status, age ,Emergency_Relation,Emergency_Name, gender ,enroll ,customer_Id, Name, number, email, Date_Of_Billing, End_Date, Address, payment_Intent, InvoiceId, Emergency_Contact, Emergency_Email, Emergency_Address, reception, Service } = req.body
         const myClients = userDetails({
             Name,
             number,
@@ -126,7 +126,8 @@ export const clients = async (req, res) => {
             enroll,
             Emergency_Name,
             Emergency_Relation,
-            gender
+            gender,
+            Payment_Status
         })
         const newClient = myClients.save()
         const sendNotif = await novu.trigger('new-clients', {
@@ -169,8 +170,8 @@ export const getVisitor = async (req, res) => {
 //To search The Client from the DB
 export const searchClient = async (req, res) => {
     try {
-        const { name } = req.body
-        const data = await userDetails.findOne({ Name: name })
+        const { email } = req.body
+        const data = await userDetails.findOne({ email: email })
         res.status(200).json(data)
 
     }
@@ -182,8 +183,9 @@ export const searchClient = async (req, res) => {
 //to get the visitor by name on search query
 export const searchVisitor = async(req,res)=>{
     try{
-        const {name}= req.body
-        const data = await walkInVisitors.findOne({Name: name})
+        const {email}= req.body
+        console.log(email)
+        const data = await walkInVisitors.findOne({email: email})
         res.status(200).send(data)
 
     }

@@ -15,6 +15,9 @@ import SignUpFailed from './Components/Signupfailed';
 import VisitorBook from './Components/visitorsBook';
 import UserBook from './Components/UserBook';
 import PointsTable from './Components/pointstable';
+import RegistrationFeature from './Components/registerFeature';
+import SelfRegistratiion from './Components/selfRegistration';
+
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
       <Route path='/visitor' element={<VisitorBook />}></Route>
       <Route path='/clientbook' element={<UserBook />}></Route>
       <Route path='/points' element={<PointsTable />}></Route> 
+      <Route path='/sendform' element={<RegistrationFeature />}></Route>
+      <Route path='/selfregistration' element={<SelfRegistratiion />}></Route>
+      
     </Routes>
     </>
   );

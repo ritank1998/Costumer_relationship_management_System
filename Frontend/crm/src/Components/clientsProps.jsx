@@ -35,6 +35,8 @@ const ClientProp = () => {
               <th scope="col">Client Name</th>
               <th scope="col">Client Email</th>
               <th scope="col">Client Contact Number</th>
+              <th scope="col">Service</th>
+              <th scope="col">Payment Status</th>
               <th scope="col">Plan Expiry Date</th>
             </tr>
           </thead>
@@ -44,7 +46,9 @@ const ClientProp = () => {
                 <th scope="row">{index + 1}</th>
                 <td>{client.Name}</td>
                 <td>{client.email}</td>
-                <td>{client.Number}</td>
+                <td>{client.number}</td>
+                <td>{client.Service}</td>
+                <td>{client.Payment_Status}</td>
                 <td>{client.End_Date}</td> {/* Use the appropriate date property */}
               </tr>
             ))}

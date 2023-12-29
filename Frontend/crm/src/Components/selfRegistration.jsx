@@ -1,8 +1,6 @@
 import React,{useState} from "react";
-import "./indexpage.css"
-import Newbar from "./newbar";
 import Footer from "./Footer";
-const LandingPage = () => {
+const SelfRegistratiion = () => {
     const [Name , setName] = useState('')
     const [email , setEmail] = useState('')
     const [number ,setNumber] = useState('')
@@ -144,15 +142,16 @@ console.log(gender)
 
     return (
         <>
-         <Newbar />
-
-
-
-
+            <nav class="navbar navbar-light bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="" width="30" height="30" class="d-inline-block align-top" alt=".." />
+                    <h className="bg-light">Client Matrix</h>
+                </a>
+            </nav>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1 class="center-heading mt-5">Client On-Boarding Form</h1>
+                        <h1 class="center-heading mt-5">Client's Self Registration Form</h1>
                     </div>
                 </div>
             </div>
@@ -207,8 +206,8 @@ console.log(gender)
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="inputState" class="form-label">Receptionist</label>
-                    <select id="inputState" class="form-select" onChange={takeReception}>
+                    <label for="inputState" class="form-label" >Receptionist</label>
+                    <select id="inputState" class="form-select" placeholder="Our Host on the Reception" onChange={takeReception}>
                         <option selected></option>
                         <option>...</option>
                         <option>Shilpi</option>
@@ -337,4 +336,4 @@ console.log(gender)
         </>
     )
 }
-export default LandingPage
+export default SelfRegistratiion

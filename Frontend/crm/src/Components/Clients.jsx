@@ -3,6 +3,7 @@ import "./indexpage.css"
 import Newbar from "./newbar";
 import ClientProp from "./clientsProps";
 import Footer from "./Footer";
+
 const Clients = () => {
     return (
         <>
