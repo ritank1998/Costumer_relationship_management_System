@@ -15,14 +15,14 @@ let transporter = nodemailer.createTransport({
 
 
 export const sendEmail = async(req,res)=>{
-    const {link , client} =  req.body
+    const {client} =  req.body
 try{
-    console.log(link , client)
+    console.log(client)
     let mailOptions = {
         from: 'saxena.ritank@gmail.com',
         to: client,
         subject: 'Register',
-        text: link
+        text: 'http://localhost:3000/selfregistration'
     };
     const response = transporter.sendMail(mailOptions, function(error, info) {
         if (error) {

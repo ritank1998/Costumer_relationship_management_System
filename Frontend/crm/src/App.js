@@ -17,6 +17,7 @@ import UserBook from './Components/UserBook';
 import PointsTable from './Components/pointstable';
 import RegistrationFeature from './Components/registerFeature';
 import SelfRegistratiion from './Components/selfRegistration';
+import InactiveClient from './Components/InactiveClients';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <Route path='/points' element={<PointsTable />}></Route> 
       <Route path='/sendform' element={<RegistrationFeature />}></Route>
       <Route path='/selfregistration' element={<SelfRegistratiion />}></Route>
+      <Route path='/inactiveclients' element={<InactiveClient />}></Route>
       
     </Routes>
     </>

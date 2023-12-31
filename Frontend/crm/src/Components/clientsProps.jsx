@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import "./indexpage.css"
-const ClientProp = () => {
+const ClientProp = (prop) => {
   const [clients, setClients] = useState([]);
 
   const fetchData=async()=>{
@@ -31,13 +31,14 @@ const ClientProp = () => {
         <table className="table table-bordered table-responsive myTable col-md-8 .mx-auto">
           <thead>
             <tr>
-              <th scope="col">Serial Number</th>
-              <th scope="col">Client Name</th>
-              <th scope="col">Client Email</th>
-              <th scope="col">Client Contact Number</th>
+              <th scope="col"></th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Contact</th>
               <th scope="col">Service</th>
+              <th scope="col">Expiry Date</th>
               <th scope="col">Payment Status</th>
-              <th scope="col">Plan Expiry Date</th>
+              <th scope="col">Transaction ID</th>
             </tr>
           </thead>
           <tbody>
@@ -48,8 +49,9 @@ const ClientProp = () => {
                 <td>{client.email}</td>
                 <td>{client.number}</td>
                 <td>{client.Service}</td>
-                <td>{client.Payment_Status}</td>
                 <td>{client.End_Date}</td> {/* Use the appropriate date property */}
+                <td>{client.Payment_Status}</td>
+                <td>{client.transaction_Id}</td>
               </tr>
             ))}
           </tbody>

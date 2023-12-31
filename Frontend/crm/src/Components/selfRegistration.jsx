@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, {useState} from "react";
 import Footer from "./Footer";
 const SelfRegistratiion = () => {
     const [Name , setName] = useState('')
@@ -24,16 +24,17 @@ const SelfRegistratiion = () => {
     const [emergencyZip , setEmergencyZip] = useState('')
     const [gender , setGender] = useState('')
 
-      
     
     const takeEmail=(e)=>{
         setEmail(e.target.value)
+        
     }
     const takeName =(e)=>{
         setName(e.target.value)
     }
     const takeNumber=(e)=>{
         setNumber(e.target.value)
+        
     }
     const takeDate=(e)=>{
         setDate(e.target.value)
@@ -58,6 +59,7 @@ const SelfRegistratiion = () => {
     }
     const takeZip=(e)=>{
         setZip(e.target.value)
+        
     }
     const takeEnrollement=(e)=>{
          setEnrolled(e.target.value)
@@ -75,7 +77,7 @@ const SelfRegistratiion = () => {
         setEmergencyState(e.target.value)
     }
     const takeEmergencyZip=(e)=>{
-        setEmergencyZip(e.target.value)
+       setEmergencyZip(e.target.value)
     }
     const takeAge=(e)=>{
         setAge(e.target.value)
@@ -88,12 +90,15 @@ const SelfRegistratiion = () => {
     }
     const takeEmergencyEmail=(e)=>{
         setEmergencyEmail(e.target.value)
+        
     }
    const takeGender=(e)=>{
     setGender(e.target.value)
    }
    console.log(number)
     
+
+
 console.log(gender)
     const createClient=async (e)=>{
         e.preventDefault();
@@ -117,7 +122,9 @@ console.log(gender)
         Emergency_Relation,
       }
       console.log(payload)
+
       try{
+      
         const response = await fetch('http://localhost:2102/crm/newclients',{
            method: "POST",
            body: JSON.stringify(payload),
@@ -129,12 +136,14 @@ console.log(gender)
             const data = await response.data
             console.log("Successful Client Registration:" , data)
             alert("Client Registered Successfully !!!")
+
         }
         else{
             alert("OOPs , Cannot Proceed !! Please try Again")
         }
 
       }
+      
       catch(error){
 
       }

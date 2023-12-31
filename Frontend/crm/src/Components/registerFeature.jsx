@@ -47,11 +47,15 @@ const RegistrationFeature = () => {
             <h1 class="display-4">Create Client's Self Registration & Payment Link</h1>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Full Name</label>
-                    <input type="email" class="form-control" id="inputEmail4" onChange={takeClient} />
+                    <input type="email" class="form-control" id="inputEmail4"  />
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail" class="form-label">Email</label>
-                    <input type="Email" class="form-control" id="inputEmail" onChange={takeLink} />
+                    <input type="Email" class="form-control" id="inputEmail" onChange={takeClient} />
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Registration Link</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" value="http://localhost:3000/selfregistration" onChange={takeLink}/>
                 </div>
                 <div class="row" style={{ "marginTop": "25px" }}>
                     <div class="col-sm-3">

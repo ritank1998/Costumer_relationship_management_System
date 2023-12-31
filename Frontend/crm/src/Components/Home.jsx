@@ -12,7 +12,7 @@ const Home = () => {
 
             <div class="d-grid gap-2 col-6 mx-auto btns">
                 <NavLink to='/visitortype'><button class="btn btn-primary btn1" type="button">Register A New Visitor</button></NavLink>
-                <NavLink to='/clientform'><button class="btn btn-primary btn2" type="button">Register A New Client</button></NavLink>
+                <NavLink to='/sendform'><button class="btn btn-primary btn2" type="button">Register A New Client</button></NavLink>
             </div>
 
             <Footer />
